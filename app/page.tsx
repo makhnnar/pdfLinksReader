@@ -16,25 +16,31 @@ export default function Home() {
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <h1>Select a PDF file to extract links</h1>
         <input type="file" id="pdf-file-input" accept=".pdf" onChange={(e)=>processFile(e.target)} />
-        <div id="links-container">
-          {links.map((link, index) => (
-            <LinkComponent key={index} url={link} />
-          ))}
+        <div id="inputs-container">
+          <FormatedInput
+            value=""
+            onChange={(e) => {}}
+          />
+          <FormatedInput
+            value=""
+            onChange={(e) => {}}
+          />
         </div>
+        {loading && <p>Loading...</p>}
+        {error && <p>Error: {error}</p>}
       </main>
     </div>
   );
 }
 
-interface LinkComponentProps {
-  url: string;
+interface FormatedInputProps {
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const LinkComponent = ({ url }: LinkComponentProps) => {
+const FormatedInput = ({ value, onChange }: FormatedInputProps) => {
   return (
-    <a href={url} target="_blank" rel="noopener noreferrer">
-      {url}
-    </a>
+    <input type="text" value={value} onChange={onChange} />
   );
 };
 
