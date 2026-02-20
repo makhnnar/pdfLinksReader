@@ -18,9 +18,6 @@ const usePdfFileProcessor = () => {
 
         try {
             const pdf = await pdfjs.getDocument(url).promise;
-            console.log('pdfFile', pdf);
-            console.log('pdf.numPages', pdf.numPages);
-
             const pagePromises = [];
             for (let i = 1; i <= pdf.numPages; i++) {
                 pagePromises.push(pdf.getPage(i).then(page => page.getAnnotations()));
@@ -34,10 +31,8 @@ const usePdfFileProcessor = () => {
                             anno.url &&
                             anno.url.includes('youtube.com')
                 )
-                console.log('filtered annotations', results);
                 return results.map(anno => anno.url as string);
             });
-            console.log('processedAnnotations', processedAnnotations);
             setLinks(processedAnnotations);
         } catch (error: any) {
             console.error('Error loading PDF:', error);
