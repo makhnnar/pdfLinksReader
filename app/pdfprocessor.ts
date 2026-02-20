@@ -28,8 +28,14 @@ const usePdfFileProcessor = () => {
 
             const allAnnotations = await Promise.all(pagePromises);
             const processedAnnotations = allAnnotations.flatMap(annotations => {
-                return annotations.filter(anno => anno.subtype === 'Link' && anno.url)
-                    .map(anno => anno.url as string);
+                const results = annotations.filter(
+                    anno => anno.subtype === 'Link' && 
+                            anno.overlaidText==="" && 
+                            anno.url &&
+                            anno.url.includes('youtube.com')
+                )
+                console.log('filtered annotations', results);
+                return results.map(anno => anno.url as string);
             });
             console.log('processedAnnotations', processedAnnotations);
             setLinks(processedAnnotations);

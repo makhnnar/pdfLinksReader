@@ -17,11 +17,25 @@ export default function Home() {
         <h1>Select a PDF file to extract links</h1>
         <input type="file" id="pdf-file-input" accept=".pdf" onChange={(e)=>processFile(e.target)} />
         <div id="links-container">
-          {links}
+          {links.map((link, index) => (
+            <LinkComponent key={index} url={link} />
+          ))}
         </div>
       </main>
     </div>
   );
 }
+
+interface LinkComponentProps {
+  url: string;
+}
+
+const LinkComponent = ({ url }: LinkComponentProps) => {
+  return (
+    <a href={url} target="_blank" rel="noopener noreferrer">
+      {url}
+    </a>
+  );
+};
 
 
