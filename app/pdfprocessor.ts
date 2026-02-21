@@ -7,9 +7,16 @@ import { useState } from 'react';
 pdfjs.GlobalWorkerOptions.workerSrc = `/pdf.worker.mjs`; // Assuming you copied pdf.worker.mjs to your public folder
 
 
+/*
+crear una clase para recorrer el json e insertar los videos
+ignorar los primeros 3 videos
+separar los videos de corrida con los videos de musculacion
+juntar los dos json de entrenamientos en uno solo
+*/
+
 const usePdfFileProcessor = () => {
 
-    const [links, setLinks] = useState<string[]>([]);
+    const [links, setLinks] = useState<string[][]>([]);
     const [loading, setLoading] = useState<boolean>(false);
     const [error, setError] = useState<string>('');
 
@@ -24,7 +31,7 @@ const usePdfFileProcessor = () => {
             }
 
             const allAnnotations = await Promise.all(pagePromises);
-            const processedAnnotations = allAnnotations.flatMap(annotations => {
+            const processedAnnotations = allAnnotations.map(annotations => {
                 const results = annotations.filter(
                     anno => anno.subtype === 'Link' && 
                             anno.overlaidText==="" && 
