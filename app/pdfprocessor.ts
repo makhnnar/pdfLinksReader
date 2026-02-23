@@ -1,5 +1,6 @@
 import * as pdfjs from 'pdfjs-dist';
 import { useState } from 'react';
+import pdfPageIndexer from './pdfpageprocessor';
 
 // Set the worker source for pdf.js from a CDN
 // This is crucial for pdf.js to work in a web environment like Next.js.
@@ -8,10 +9,8 @@ pdfjs.GlobalWorkerOptions.workerSrc = `/pdf.worker.mjs`; // Assuming you copied 
 
 
 /*
-crear una clase para recorrer el json e insertar los videos
-ignorar los primeros 3 videos
-separar los videos de corrida con los videos de musculacion
-juntar los dos json de entrenamientos en uno solo
+modificar la estrutura actual del array para que tenga un array de 12 posiciones, 
+una por semana, y cada semana tenga 5 posiciones
 */
 
 const usePdfFileProcessor = () => {
@@ -19,6 +18,8 @@ const usePdfFileProcessor = () => {
     const [links, setLinks] = useState<string[][]>([]);
     const [loading, setLoading] = useState<boolean>(false);
     const [error, setError] = useState<string>('');
+
+    const pdfPagProc = pdfPageIndexer();
 
     const getLinks = async (url: string) => {
         console.log('url(getLinks)', url);
@@ -31,15 +32,30 @@ const usePdfFileProcessor = () => {
             }
 
             const allAnnotations = await Promise.all(pagePromises);
-            const processedAnnotations = allAnnotations.map(annotations => {
-                const results = annotations.filter(
-                    anno => anno.subtype === 'Link' && 
-                            anno.overlaidText==="" && 
-                            anno.url &&
-                            anno.url.includes('youtube.com')
-                )
-                return results.map(anno => anno.url as string);
-            });
+            
+            console.log('allAnnotations', JSON.stringify(allAnnotations));
+
+            const pdfPageMap = pdfPagProc.processPages(allAnnotations);
+
+            console.log('pdfPageMap', JSON.stringify(pdfPageMap));
+
+            const processedAnnotations: string[][] = [];
+            for (const weekNum in pdfPageMap.weeks) {
+                if (Object.prototype.hasOwnProperty.call(pdfPageMap.weeks, weekNum)) {
+                    const weekStructure = pdfPageMap.weeks[weekNum];
+                    // We are interested in trainingPages which contain the actual workouts
+                    weekStructure.trainingPages.forEach(pageIndex => {
+                        const annotations = allAnnotations[pageIndex];
+                        const results = annotations.filter(
+                            anno => anno.subtype === 'Link' &&
+                                    anno.overlaidText === "" &&
+                                    anno.url &&
+                                    anno.url.includes('youtube.com')
+                        );
+                        processedAnnotations.push(results.map(anno => anno.url as string));
+                    });
+                }
+            }
             setLinks(processedAnnotations);
         } catch (error: any) {
             console.error('Error loading PDF:', error);

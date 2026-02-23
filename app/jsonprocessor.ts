@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 const useJsonProcessor = () => {
+    const [originalJson, setOriginalJson] = useState<string | null>(null);
     const [processedJson, setProcessedJson] = useState<string | null>(null);
 
     /**
@@ -10,26 +11,28 @@ const useJsonProcessor = () => {
      * @param jsonInput The JSON file to process.
      * @param urls An array of URL strings.
      */
-    const processData = (jsonInput: string, urls: string[][]) => {
-        // TODO: Implement the logic for processing the JSON and URLs.
+    const processData = (urls: string[][]) => {
+        if (!originalJson) {
+            console.error("Cannot process: JSON input is empty.");
+            return;
+        }
         try {
-            const data = JSON.parse(jsonInput);
+            const data = JSON.parse(originalJson);
+
+            console.log("url size: ", urls.length)
 
             data.weeks.forEach((week: any, weekIndex: number) => {
-                const urlIndexForWeek = weekIndex * 2;
-
-                // Process running trainings (even positions: 0, 2, 4...)
-                if (week.running_trainings && Array.isArray(week.running_trainings)) {
-                    week.running_trainings.forEach((training: any) => {
-                        training.explanation_video = urls[urlIndexForWeek]?.[0] ?? null;
-                    });
-                }
-
-                // Process lifted trainings (odd positions: 1, 3, 5...)
-                if (week.lifted_trainings && Array.isArray(week.lifted_trainings)) {
-                    week.lifted_trainings.forEach((training: any) => {
-                        // Access the next URL index for lifted training
-                        training.explanation_video = urls[urlIndexForWeek + 1]?.[0] ?? null;
+                // Iterate through trainings and assign URLs based on type
+                if (week.trainings && Array.isArray(week.trainings)) {
+                    week.trainings.forEach((training: any) => {
+                        if (training.type === 'running') {
+                            // Assign URL from even positions for running trainings
+                            training.explanation_video = urls[weekIndex]?.[0] ?? null;
+                        }
+                        if (training.type === 'weights') {
+                            // Assign URL from odd positions for weights trainings
+                            training.explanation_video = urls[weekIndex+1]?.[0] ?? null;
+                        }
                     });
                 }
             });
@@ -43,6 +46,8 @@ const useJsonProcessor = () => {
 
     return {
         processData,
+        originalJson,
+        setOriginalJson,
         processedJson,
     };
 };
