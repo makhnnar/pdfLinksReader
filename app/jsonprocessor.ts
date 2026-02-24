@@ -11,7 +11,7 @@ const useJsonProcessor = () => {
      * @param jsonInput The JSON file to process.
      * @param urls An array of URL strings.
      */
-    const processData = (urls: string[][]) => {
+    const processData = (urls: Record<number, string[][]>) => {
         if (!originalJson) {
             console.error("Cannot process: JSON input is empty.");
             return;
@@ -19,7 +19,7 @@ const useJsonProcessor = () => {
         try {
             const data = JSON.parse(originalJson);
 
-            console.log("url size: ", urls.length)
+            console.log("urls: ", urls)
 
             data.weeks.forEach((week: any, weekIndex: number) => {
                 // Iterate through trainings and assign URLs based on type
@@ -27,11 +27,17 @@ const useJsonProcessor = () => {
                     week.trainings.forEach((training: any) => {
                         if (training.type === 'running') {
                             // Assign URL from even positions for running trainings
-                            training.explanation_video = urls[weekIndex]?.[0] ?? null;
+                            training.sessions.forEach((session: any, sessionIndex: number) => {
+                                session.explanation_video = urls[weekIndex]?.[0][sessionIndex] ?? null;
+                            });
                         }
                         if (training.type === 'weights') {
                             // Assign URL from odd positions for weights trainings
-                            training.explanation_video = urls[weekIndex+1]?.[0] ?? null;
+                            training.sessions.forEach((session: any,sessionIndex: number) => {
+                                session.blocks.forEach((block: any, blockIndex: number) => {
+                                    block.explanation_video = urls[weekIndex]?.[sessionIndex + 1][blockIndex] ?? null;
+                                });
+                            });
                         }
                     });
                 }

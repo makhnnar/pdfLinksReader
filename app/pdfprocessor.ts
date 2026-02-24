@@ -15,7 +15,7 @@ una por semana, y cada semana tenga 5 posiciones
 
 const usePdfFileProcessor = () => {
 
-    const [links, setLinks] = useState<string[][]>([]);
+    const [links, setLinks] = useState<Record<number, string[][]>>({});
     const [loading, setLoading] = useState<boolean>(false);
     const [error, setError] = useState<string>('');
 
@@ -39,11 +39,12 @@ const usePdfFileProcessor = () => {
 
             console.log('pdfPageMap', JSON.stringify(pdfPageMap));
 
-            const processedAnnotations: string[][] = [];
+            const processedAnnotations: Record<number, string[][]> = {};
+
             for (const weekNum in pdfPageMap.weeks) {
                 if (Object.prototype.hasOwnProperty.call(pdfPageMap.weeks, weekNum)) {
                     const weekStructure = pdfPageMap.weeks[weekNum];
-                    // We are interested in trainingPages which contain the actual workouts
+                    const processedWeek: string[][] = [];
                     weekStructure.trainingPages.forEach(pageIndex => {
                         const annotations = allAnnotations[pageIndex];
                         const results = annotations.filter(
@@ -52,8 +53,12 @@ const usePdfFileProcessor = () => {
                                     anno.url &&
                                     anno.url.includes('youtube.com')
                         );
-                        processedAnnotations.push(results.map(anno => anno.url as string));
+                        const videoUrls = results.map(anno => anno.url as string)
+                        processedWeek.push(
+                            videoUrls
+                        );
                     });
+                    processedAnnotations[weekNum] = processedWeek;
                 }
             }
             setLinks(processedAnnotations);

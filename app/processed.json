@@ -1,7 +1,11 @@
 {
   "program_info": {
     "name": "Time Híbrido",
+    "lifting_type": "Musculação",
+    "running_goal": "5KM",
+    "running_level": "Iniciante - Nível 3",
     "location": "Casa",
+    "frequency": "4x Semana Musculação + Corrida",
     "duration": "12 Weeks"
   },
   "weeks": [
@@ -26,7 +30,8 @@
                       "reps": "Mobilidade"
                     }
                   ],
-                  "rest": "1 Min"
+                  "rest": "1 Min",
+                  "explanation_video": null
                 },
                 {
                   "block": 2,
@@ -38,7 +43,8 @@
                       "reps": "10-08-06-04-02"
                     }
                   ],
-                  "rest": "90 Seg"
+                  "rest": "90 Seg",
+                  "explanation_video": null
                 },
                 {
                   "block": 3,
@@ -55,7 +61,8 @@
                       "reps": "Falha"
                     }
                   ],
-                  "rest": "90 Seg"
+                  "rest": "90 Seg",
+                  "explanation_video": null
                 },
                 {
                   "block": 4,
@@ -72,7 +79,8 @@
                       "reps": "15"
                     }
                   ],
-                  "rest": "90 Seg"
+                  "rest": "90 Seg",
+                  "explanation_video": null
                 },
                 {
                   "block": 5,
@@ -89,7 +97,8 @@
                       "reps": "15"
                     }
                   ],
-                  "rest": "90 Seg"
+                  "rest": "90 Seg",
+                  "explanation_video": null
                 }
               ]
             },
@@ -112,7 +121,8 @@
                       "reps": "15"
                     }
                   ],
-                  "rest": "45 Seg"
+                  "rest": "45 Seg",
+                  "explanation_video": null
                 },
                 {
                   "block": 2,
@@ -129,7 +139,8 @@
                       "reps": "10"
                     }
                   ],
-                  "rest": "90 Seg"
+                  "rest": "90 Seg",
+                  "explanation_video": null
                 },
                 {
                   "block": 3,
@@ -141,7 +152,8 @@
                       "reps": "15"
                     }
                   ],
-                  "rest": "45 Seg"
+                  "rest": "45 Seg",
+                  "explanation_video": null
                 },
                 {
                   "block": 4,
@@ -158,7 +170,8 @@
                       "reps": "15"
                     }
                   ],
-                  "rest": "90 Seg"
+                  "rest": "90 Seg",
+                  "explanation_video": null
                 },
                 {
                   "block": 5,
@@ -175,7 +188,8 @@
                       "reps": "15"
                     }
                   ],
-                  "rest": "90 Seg"
+                  "rest": "90 Seg",
+                  "explanation_video": null
                 },
                 {
                   "block": 6,
@@ -187,7 +201,8 @@
                       "reps": "15"
                     }
                   ],
-                  "rest": "45 Seg"
+                  "rest": "45 Seg",
+                  "explanation_video": null
                 }
               ]
             },
@@ -205,7 +220,8 @@
                       "reps": "Mobilidade"
                     }
                   ],
-                  "rest": "1 Min"
+                  "rest": "1 Min",
+                  "explanation_video": null
                 },
                 {
                   "block": 2,
@@ -217,7 +233,8 @@
                       "reps": "40 Reps (Total)"
                     }
                   ],
-                  "rest": "45 Seg"
+                  "rest": "45 Seg",
+                  "explanation_video": null
                 },
                 {
                   "block": 3,
@@ -229,7 +246,8 @@
                       "reps": "15"
                     }
                   ],
-                  "rest": "45 Seg"
+                  "rest": "45 Seg",
+                  "explanation_video": null
                 },
                 {
                   "block": 4,
@@ -246,7 +264,8 @@
                       "reps": "15"
                     }
                   ],
-                  "rest": "90 Seg"
+                  "rest": "90 Seg",
+                  "explanation_video": null
                 },
                 {
                   "block": 5,
@@ -258,7 +277,8 @@
                       "reps": "15"
                     }
                   ],
-                  "rest": "45 Seg"
+                  "rest": "45 Seg",
+                  "explanation_video": null
                 },
                 {
                   "block": 6,
@@ -270,7 +290,8 @@
                       "reps": "15"
                     }
                   ],
-                  "rest": "45 Seg"
+                  "rest": "45 Seg",
+                  "explanation_video": null
                 }
               ]
             },
@@ -288,7 +309,8 @@
                       "reps": "Mobilidade"
                     }
                   ],
-                  "rest": "1 Min"
+                  "rest": "1 Min",
+                  "explanation_video": null
                 },
                 {
                   "block": 2,
@@ -305,7 +327,8 @@
                       "reps": "15"
                     }
                   ],
-                  "rest": "45 Seg"
+                  "rest": "45 Seg",
+                  "explanation_video": null
                 },
                 {
                   "block": 3,
@@ -322,7 +345,8 @@
                       "reps": "15"
                     }
                   ],
-                  "rest": "90 Seg"
+                  "rest": "90 Seg",
+                  "explanation_video": null
                 },
                 {
                   "block": 4,
@@ -339,7 +363,8 @@
                       "reps": "15"
                     }
                   ],
-                  "rest": "90 Seg"
+                  "rest": "90 Seg",
+                  "explanation_video": null
                 },
                 {
                   "block": 5,
@@ -351,7 +376,8 @@
                       "reps": "1 Min"
                     }
                   ],
-                  "rest": "45 Seg"
+                  "rest": "45 Seg",
+                  "explanation_video": null
                 }
               ]
             }
@@ -362,21 +388,23 @@
           "sessions": [
             {
               "day": "3ª Feira",
-              "workout_type": "Intervalado 1:1",
-              "details": "1x Z1 (5') + 15x (Z3 1' / Z1 1') + 1x Z1 (5')"
+              "type": "Intervalado 1:1",
+              "details": "1x Z1 (5') + 15x (Z3 1' / Z1 1') + 1x Z1 (5')",
+              "explanation_video": null
             },
             {
               "day": "5ª Feira",
-              "workout_type": "Intervalado 2:2",
-              "details": "1x Z1 (5') + 6x (Z4 2' / Z1 2') + 1x Z1 (5')"
+              "type": "Intervalado 2:2",
+              "details": "1x Z1 (5') + 6x (Z4 2' / Z1 2') + 1x Z1 (5')",
+              "explanation_video": null
             },
             {
               "day": "Sábado",
-              "workout_type": "Contínuo 25 min",
-              "details": "1x Z1 (5') + 1x Z3 (25') + 1x Z1 (5')"
+              "type": "Contínuo 25 min",
+              "details": "1x Z1 (5') + 1x Z3 (25') + 1x Z1 (5')",
+              "explanation_video": null
             }
-          ],
-          "explanation_video": "https://www.youtube.com/watch?v=2Jarhxjbq94"
+          ]
         }
       ]
     },
@@ -392,6 +420,19 @@
               "focus": "Peito, Ombro e Tríceps",
               "blocks": [
                 {
+                  "block": 1,
+                  "type": "Aquecimento",
+                  "exercises": [
+                    {
+                      "name": "Aquecimento/Mobilidade Pré Treino de Superiores",
+                      "sets": 1,
+                      "reps": "Mobilidade"
+                    }
+                  ],
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=M8goKw7_-tU"
+                },
+                {
                   "block": 2,
                   "type": "Rest-Pause",
                   "exercises": [
@@ -401,7 +442,8 @@
                       "reps": "10-08-06-04-02"
                     }
                   ],
-                  "rest": "1 Min"
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=ujeBMBWeji4"
                 },
                 {
                   "block": 3,
@@ -418,7 +460,8 @@
                       "reps": "Falha"
                     }
                   ],
-                  "rest": "1 Min"
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=zrvOx_B4FZg"
                 },
                 {
                   "block": 4,
@@ -435,7 +478,8 @@
                       "reps": "12"
                     }
                   ],
-                  "rest": "1 Min"
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=QplDDWDn6DQ"
                 },
                 {
                   "block": 5,
@@ -452,7 +496,8 @@
                       "reps": "12"
                     }
                   ],
-                  "rest": "1 Min"
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=Xn29F_bchoE"
                 }
               ]
             },
@@ -460,6 +505,24 @@
               "id": "treino_b",
               "focus": "Membros Inferiores",
               "blocks": [
+                {
+                  "block": 1,
+                  "type": "Aquecimento",
+                  "exercises": [
+                    {
+                      "name": "Flexibilidade e Mobilidade Inferiores",
+                      "sets": 1,
+                      "reps": "Mobilidade"
+                    },
+                    {
+                      "name": "Agachamento c/ Peso do Corpo",
+                      "sets": 3,
+                      "reps": "15"
+                    }
+                  ],
+                  "rest": "45 Seg",
+                  "explanation_video": "https://www.youtube.com/watch?v=sBJK1MU1JGg"
+                },
                 {
                   "block": 2,
                   "type": "Bi-Set",
@@ -475,7 +538,8 @@
                       "reps": "12"
                     }
                   ],
-                  "rest": "1 Min"
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=oM4dQnw2r44"
                 },
                 {
                   "block": 3,
@@ -487,7 +551,8 @@
                       "reps": "12"
                     }
                   ],
-                  "rest": "1 Min"
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=rMOB4cfZBMw"
                 },
                 {
                   "block": 4,
@@ -504,7 +569,8 @@
                       "reps": "12"
                     }
                   ],
-                  "rest": "1 Min"
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=eNFJcyn5Orw"
                 },
                 {
                   "block": 5,
@@ -521,7 +587,8 @@
                       "reps": "12"
                     }
                   ],
-                  "rest": "1 Min"
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=nX9HofwBxlU"
                 },
                 {
                   "block": 6,
@@ -533,7 +600,8 @@
                       "reps": "12"
                     }
                   ],
-                  "rest": "1 Min"
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=LbOq8UhyP0E"
                 }
               ]
             },
@@ -541,6 +609,19 @@
               "id": "treino_c",
               "focus": "Costas e Bíceps",
               "blocks": [
+                {
+                  "block": 1,
+                  "type": "Aquecimento",
+                  "exercises": [
+                    {
+                      "name": "Aquecimento/Mobilidade Pré Treino de Superiores",
+                      "sets": 1,
+                      "reps": "Mobilidade"
+                    }
+                  ],
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=M8goKw7_-tU"
+                },
                 {
                   "block": 2,
                   "type": "Meta de Repetição",
@@ -551,7 +632,8 @@
                       "reps": "40 Reps (Total)"
                     }
                   ],
-                  "rest": "1 Min"
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=QiqAp1eNIlg"
                 },
                 {
                   "block": 3,
@@ -563,7 +645,8 @@
                       "reps": "12"
                     }
                   ],
-                  "rest": "1 Min"
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=grkz0ncbxL4"
                 },
                 {
                   "block": 4,
@@ -580,7 +663,8 @@
                       "reps": "12"
                     }
                   ],
-                  "rest": "1 Min"
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=d1FSh4TffMo"
                 },
                 {
                   "block": 5,
@@ -592,7 +676,8 @@
                       "reps": "12"
                     }
                   ],
-                  "rest": "1 Min"
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=7B-d4lLUVVo"
                 },
                 {
                   "block": 6,
@@ -604,7 +689,8 @@
                       "reps": "12"
                     }
                   ],
-                  "rest": "1 Min"
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=HR4EUi-_m24"
                 }
               ]
             },
@@ -612,6 +698,19 @@
               "id": "treino_d",
               "focus": "Ombros e Abdominal",
               "blocks": [
+                {
+                  "block": 1,
+                  "type": "Aquecimento",
+                  "exercises": [
+                    {
+                      "name": "Aquecimento/Mobilidade Pré Treino de Superiores",
+                      "sets": 1,
+                      "reps": "Mobilidade"
+                    }
+                  ],
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=M8goKw7_-tU"
+                },
                 {
                   "block": 2,
                   "type": "Bi-Set",
@@ -627,7 +726,8 @@
                       "reps": "12"
                     }
                   ],
-                  "rest": "45 Seg"
+                  "rest": "45 Seg",
+                  "explanation_video": "https://www.youtube.com/watch?v=QplDDWDn6DQ"
                 },
                 {
                   "block": 3,
@@ -644,7 +744,8 @@
                       "reps": "12"
                     }
                   ],
-                  "rest": "90 Seg"
+                  "rest": "90 Seg",
+                  "explanation_video": "https://www.youtube.com/watch?v=zmNXzk6M7VI"
                 },
                 {
                   "block": 4,
@@ -661,7 +762,8 @@
                       "reps": "12"
                     }
                   ],
-                  "rest": "90 Seg"
+                  "rest": "90 Seg",
+                  "explanation_video": "https://www.youtube.com/watch?v=tMitFrY5ZpA"
                 },
                 {
                   "block": 5,
@@ -673,30 +775,33 @@
                       "reps": "1 Min"
                     }
                   ],
-                  "rest": "45 Seg"
+                  "rest": "45 Seg",
+                  "explanation_video": "https://www.youtube.com/watch?v=TjXkY8xmsEU"
                 }
               ]
             }
-          ],
-          "explanation_video": null
+          ]
         },
         {
           "type": "running",
           "sessions": [
             {
               "day": "3ª Feira",
-              "workout_type": "Intervalado 1:1",
-              "details": "1x Z1 (5') + 16x (Z3 1' / Z1 1') + 1x Z1 (5')"
+              "type": "Intervalado 1:1",
+              "details": "1x Z1 (5') + 16x (Z3 1' / Z1 1') + 1x Z1 (5')",
+              "explanation_video": "https://www.youtube.com/watch?v=n3oSXWHxRZc"
             },
             {
               "day": "5ª Feira",
-              "workout_type": "Intervalado 2:2",
-              "details": "1x Z1 (5') + 7x (Z4 2' / Z1 2') + 1x Z1 (5')"
+              "type": "Intervalado 2:2",
+              "details": "1x Z1 (5') + 7x (Z4 2' / Z1 2') + 1x Z1 (5')",
+              "explanation_video": "https://www.youtube.com/watch?v=XXKGgbXsSYk"
             },
             {
               "day": "Sábado",
-              "workout_type": "Contínuo 27 min",
-              "details": "1x Z1 (5') + 1x Z3 (27') + 1x Z1 (5')"
+              "type": "Contínuo 27 min",
+              "details": "1x Z1 (5') + 1x Z3 (27') + 1x Z1 (5')",
+              "explanation_video": "https://www.youtube.com/watch?v=_LOg39fcznc"
             }
           ]
         }
@@ -714,19 +819,48 @@
               "focus": "Peito, Ombro e Tríceps",
               "blocks": [
                 {
+                  "block": 1,
+                  "type": "Aquecimento",
+                  "exercises": [
+                    {
+                      "name": "Aquecimento/Mobilidade Pré Treino de Superiores",
+                      "sets": 1,
+                      "reps": "Mobilidade"
+                    }
+                  ],
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=M8goKw7_-tU"
+                },
+                {
+                  "block": 2,
+                  "type": "Rest-Pause",
+                  "exercises": [
+                    {
+                      "name": "Flexão no Solo",
+                      "sets": 4,
+                      "reps": "10-08-06-04-02"
+                    }
+                  ],
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=ujeBMBWeji4"
+                },
+                {
                   "block": 3,
                   "type": "Bi-Set",
-                  "reps": "10"
-                },
-                {
-                  "block": 4,
-                  "type": "Bi-Set",
-                  "reps": "10"
-                },
-                {
-                  "block": 5,
-                  "type": "Bi-Set",
-                  "reps": "10"
+                  "exercises": [
+                    {
+                      "name": "Crucifixo Reto c/ Halteres",
+                      "sets": 4,
+                      "reps": "10"
+                    },
+                    {
+                      "name": "Flexão Militar no Solo",
+                      "sets": 4,
+                      "reps": "Falha"
+                    }
+                  ],
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=zrvOx_B4FZg"
                 }
               ]
             }
@@ -737,55 +871,21 @@
           "sessions": [
             {
               "day": "3ª Feira",
-              "details": "1x Z1 (5') + 17x (Z3 1' / Z1 1') + 1x Z1 (5')"
+              "type": "Intervalado 1:1",
+              "details": "1x Z1 (5') + 17x (Z3 1' / Z1 1') + 1x Z1 (5')",
+              "explanation_video": "https://www.youtube.com/watch?v=n3oSXWHxRZc"
             },
             {
               "day": "5ª Feira",
-              "details": "1x Z1 (5') + 8x (Z4 2' / Z1 2') + 1x Z1 (5')"
+              "type": "Intervalado 2:2",
+              "details": "1x Z1 (5') + 8x (Z4 2' / Z1 2') + 1x Z1 (5')",
+              "explanation_video": "https://www.youtube.com/watch?v=XXKGgbXsSYk"
             },
             {
               "day": "Sábado",
-              "details": "1x Z1 (5') + 1x Z3 (30') + 1x Z1 (5')"
-            }
-          ],
-          "explanation_video": null
-        }
-      ]
-    },
-    {
-      "week_number": 4,
-      "phase": "Base",
-      "trainings": [
-        {
-          "type": "weights",
-          "sessions": [
-            {
-              "id": "treino_a",
-              "focus": "Peito, Ombro e Tríceps",
-              "blocks": [
-                {
-                  "block": 2,
-                  "rest": "90 Seg"
-                }
-              ]
-            }
-          ],
-          "explanation_video": null
-        },
-        {
-          "type": "running",
-          "sessions": [
-            {
-              "day": "3ª Feira",
-              "details": "15x (Z3 1' / Z1 1')"
-            },
-            {
-              "day": "5ª Feira",
-              "details": "6x (Z4 2' / Z1 2')"
-            },
-            {
-              "day": "Sábado",
-              "details": "1x Z3 (25')"
+              "type": "Contínuo 30 min",
+              "details": "1x Z1 (5') + 1x Z3 (30') + 1x Z1 (5')",
+              "explanation_video": "https://www.youtube.com/watch?v=_LOg39fcznc"
             }
           ]
         }
@@ -799,21 +899,39 @@
           "type": "weights",
           "sessions": [
             {
-              "id": "treino_a",
+              "id": "treino_b",
+              "focus": "Membros Inferiores",
               "blocks": [
+                {
+                  "block": 1,
+                  "type": "Aquecimento",
+                  "exercises": [
+                    {
+                      "name": "Flexibilidade e Mobilidade Inferiores",
+                      "sets": 1,
+                      "reps": "Mobilidade"
+                    }
+                  ],
+                  "rest": "45 Seg",
+                  "explanation_video": null
+                },
                 {
                   "block": 2,
                   "type": "Bi-Set",
                   "exercises": [
                     {
-                      "name": "Flexão Solo",
+                      "name": "Agachamento Livre",
+                      "sets": 4,
                       "reps": "12"
                     },
                     {
-                      "name": "Elevação Lateral",
-                      "reps": "12"
+                      "name": "Cadeira Chinesa",
+                      "sets": 4,
+                      "reps": "Falha"
                     }
-                  ]
+                  ],
+                  "rest": "90 Seg",
+                  "explanation_video": null
                 }
               ]
             }
@@ -824,132 +942,15 @@
           "sessions": [
             {
               "day": "3ª Feira",
-              "workout_type": "Intervalado 2:1",
-              "details": "10x (Z3 2' / Z1 1')"
+              "type": "Intervalado 2:1",
+              "details": "1x Z1 (5') + 10x (Z3 2' / Z1 1') + 1x Z1 (5')",
+              "explanation_video": null
             },
             {
               "day": "5ª Feira",
-              "workout_type": "Intervalado 4:1",
-              "details": "7x (Z4 4' / Z1 1')"
-            }
-          ],
-          "explanation_video": null
-        }
-      ]
-    },
-    {
-      "week_number": 6,
-      "phase": "Consolidação",
-      "trainings": [
-        {
-          "type": "weights",
-          "sessions": [
-            {
-              "id": "treino_b",
-              "blocks": [
-                {
-                  "block": 2,
-                  "reps": "10"
-                },
-                {
-                  "block": 3,
-                  "reps": "10"
-                }
-              ]
-            }
-          ],
-          "explanation_video": "https://www.youtube.com/watch?v=Rmd1AUs0wy4"
-        },
-        {
-          "type": "running",
-          "sessions": [
-            {
-              "day": "3ª Feira",
-              "details": "11x (Z3 2' / Z1 1')"
-            },
-            {
-              "day": "5ª Feira",
-              "details": "8x (Z4 4' / Z1 1')"
-            },
-            {
-              "day": "Sábado",
-              "details": "1x Z3 (32')"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "week_number": 7,
-      "phase": "Consolidação",
-      "trainings": [
-        {
-          "type": "weights",
-          "sessions": [
-            {
-              "id": "treino_c",
-              "blocks": [
-                {
-                  "block": 2,
-                  "reps": "8"
-                },
-                {
-                  "block": 3,
-                  "reps": "8"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "running",
-          "sessions": [
-            {
-              "day": "3ª Feira",
-              "details": "12x (Z3 2' / Z1 1')"
-            },
-            {
-              "day": "5ª Feira",
-              "details": "9x (Z4 4' / Z1 1')"
-            },
-            {
-              "day": "Sábado",
-              "details": "1x Z3 (35')"
-            }
-          ],
-          "explanation_video": null
-        }
-      ]
-    },
-    {
-      "week_number": 8,
-      "phase": "Consolidação",
-      "trainings": [
-        {
-          "type": "weights",
-          "sessions": [
-            {
-              "id": "treino_a",
-              "blocks": [
-                {
-                  "block": 2,
-                  "reps": "12"
-                }
-              ]
-            }
-          ],
-          "explanation_video": null
-        },
-        {
-          "type": "running",
-          "sessions": [
-            {
-              "day": "3ª Feira",
-              "details": "10x (Z3 2' / Z1 1')"
-            },
-            {
-              "day": "5ª Feira",
-              "details": "7x (Z4 4' / Z1 1')"
+              "type": "Intervalado 4:1",
+              "details": "1x Z1 (5') + 7x (Z4 4' / Z1 1') + 1x Z1 (5')",
+              "explanation_video": null
             }
           ]
         }
@@ -964,11 +965,38 @@
           "sessions": [
             {
               "id": "treino_a",
+              "focus": "Peito, Ombro e Tríceps",
               "blocks": [
+                {
+                  "block": 1,
+                  "type": "Aquecimento",
+                  "exercises": [
+                    {
+                      "name": "Aquecimento/Mobilidade Pré Treino de Superiores",
+                      "sets": 1,
+                      "reps": "Mobilidade"
+                    }
+                  ],
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=M8goKw7_-tU"
+                },
                 {
                   "block": 2,
                   "type": "Bi-Set",
-                  "reps": "10"
+                  "exercises": [
+                    {
+                      "name": "Elevação Lateral",
+                      "sets": 4,
+                      "reps": "10"
+                    },
+                    {
+                      "name": "Prancha com Toque Ombro",
+                      "sets": 4,
+                      "reps": "10"
+                    }
+                  ],
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=ujeBMBWeji4"
                 }
               ]
             }
@@ -979,88 +1007,17 @@
           "sessions": [
             {
               "day": "3ª Feira",
-              "workout_type": "Intervalado 5:1",
-              "details": "6x (Z3 5' / Z1 1')"
+              "type": "Intervalado 5:1",
+              "details": "1x Z1 (5') + 6x (Z3 5' / Z1 1') + 1x Z1 (5')",
+              "explanation_video": "https://www.youtube.com/watch?v=n3oSXWHxRZc"
             },
             {
               "day": "5ª Feira",
-              "workout_type": "Intervalado 3:2",
-              "details": "7x (Z4 3' / Z1 2')"
-            }
-          ],
-          "explanation_video": "https://www.youtube.com/watch?v=p04nPFG--XE"
-        }
-      ]
-    },
-    {
-      "week_number": 10,
-      "phase": "Alvo",
-      "trainings": [
-        {
-          "type": "weights",
-          "sessions": [
-            {
-              "id": "treino_b",
-              "blocks": [
-                {
-                  "block": 3,
-                  "reps": "10"
-                }
-              ]
-            }
-          ],
-          "explanation_video": "https://www.youtube.com/watch?v=n3oSXWHxRZc"
-        },
-        {
-          "type": "running",
-          "sessions": [
-            {
-              "day": "3ª Feira",
-              "details": "7x (Z3 5' / Z1 1')"
-            },
-            {
-              "day": "5ª Feira",
-              "details": "8x (Z4 3' / Z1 2')"
-            },
-            {
-              "day": "Sábado",
-              "details": "1x Z3 (40')"
+              "type": "Intervalado 3:2",
+              "details": "1x Z1 (5') + 7x (Z4 3' / Z1 2') + 1x Z1 (5')",
+              "explanation_video": "https://www.youtube.com/watch?v=XXKGgbXsSYk"
             }
           ]
-        }
-      ]
-    },
-    {
-      "week_number": 11,
-      "phase": "Alvo",
-      "trainings": [
-        {
-          "type": "weights",
-          "sessions": [
-            {
-              "id": "treino_c",
-              "blocks": [
-                {
-                  "block": 2,
-                  "reps": "8"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "running",
-          "sessions": [
-            {
-              "day": "3ª Feira",
-              "details": "8x (Z3 5' / Z1 1')"
-            },
-            {
-              "day": "5ª Feira",
-              "details": "9x (Z4 3' / Z1 2')"
-            }
-          ],
-          "explanation_video": "https://www.youtube.com/watch?v=M8goKw7_-tU"
         }
       ]
     },
@@ -1073,27 +1030,44 @@
           "sessions": [
             {
               "id": "treino_a",
+              "focus": "Peito, Ombro e Tríceps",
               "blocks": [
                 {
-                  "block": 2,
-                  "reps": "15"
+                  "block": 5,
+                  "type": "Bi-Set",
+                  "exercises": [
+                    {
+                      "name": "Flexão Inclinada",
+                      "sets": 4,
+                      "reps": "15"
+                    },
+                    {
+                      "name": "Tríceps Paralela",
+                      "sets": 4,
+                      "reps": "15"
+                    }
+                  ],
+                  "rest": "1 Min",
+                  "explanation_video": "https://www.youtube.com/watch?v=M8goKw7_-tU"
                 }
               ]
             }
-          ],
-          "explanation_video": "https://www.youtube.com/watch?v=sBJK1MU1JGg"
+          ]
         },
         {
           "type": "running",
           "sessions": [
             {
               "day": "3ª Feira",
-              "details": "6x (Z3 5' / Z1 1')"
+              "type": "Intervalado 5:1",
+              "details": "1x Z1 (5') + 6x (Z3 5' / Z1 1') + 1x Z1 (5')",
+              "explanation_video": "https://www.youtube.com/watch?v=n3oSXWHxRZc"
             },
             {
               "day": "Domingo",
-              "workout_type": "Prova Alvo 5KM",
-              "details": "5KM Z4/Z5"
+              "type": "Prova Alvo 5KM",
+              "details": "1x Z1 (5') + 5KM Z4/Z5 + 1x Z1 (5')",
+              "explanation_video": "https://www.youtube.com/watch?v=c_Xq6ktvHhg"
             }
           ]
         }
