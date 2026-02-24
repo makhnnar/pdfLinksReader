@@ -48,6 +48,8 @@ const pdfPageIndexer = () => {
 
     // 1. Parse TOC (Index 1) for Weeks
     const tocPage = pages[1]; // Page 2 is the TOC
+    let startingPage = -1;
+
     if (tocPage) {
       tocPage.forEach((ann) => {
         if (!ann.overlaidText) return;
@@ -57,11 +59,23 @@ const pdfPageIndexer = () => {
         const weekMatch = ann.overlaidText.match(/semana\s+(\d+).*?(\d+)$/i);
 
         if (weekMatch) {
+          console.log('weekMatch', weekMatch);
+          console.log('ann', ann);
+
+
           const weekNum = parseInt(weekMatch[1], 10);
-          const pdfPageNum = parseInt(weekMatch[2], 10);
+          if(startingPage === -1){
+            //we catch only the first match
+            const pdfPageNum = parseInt(weekMatch[2], 10);
+            startingPage = pdfPageNum;
+          } else {
+            //we build the other ones to avoid wrong text on the annotations
+            startingPage += 6;
+          }
+          
           
           // Convert PDF Page Number (1-based) to Array Index (0-based)
-          const startIndex = pdfPageNum - 1; 
+          const startIndex = startingPage - 1; 
           
           map.weeks[weekNum] = buildWeekStructure(startIndex);
         }

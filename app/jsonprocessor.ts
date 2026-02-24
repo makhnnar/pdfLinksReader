@@ -19,7 +19,7 @@ const useJsonProcessor = () => {
         try {
             const data = JSON.parse(originalJson);
 
-            console.log("urls: ", urls)
+            console.log("urls: ", JSON.stringify(urls))
 
             data.weeks.forEach((week: any, weekIndex: number) => {
                 // Iterate through trainings and assign URLs based on type
@@ -28,14 +28,14 @@ const useJsonProcessor = () => {
                         if (training.type === 'running') {
                             // Assign URL from even positions for running trainings
                             training.sessions.forEach((session: any, sessionIndex: number) => {
-                                session.explanation_video = urls[weekIndex]?.[0][sessionIndex] ?? null;
+                                session.explanation_video = urls[weekIndex+1]?.[0][sessionIndex] ?? null;
                             });
                         }
                         if (training.type === 'weights') {
                             // Assign URL from odd positions for weights trainings
                             training.sessions.forEach((session: any,sessionIndex: number) => {
                                 session.blocks.forEach((block: any, blockIndex: number) => {
-                                    block.explanation_video = urls[weekIndex]?.[sessionIndex + 1][blockIndex] ?? null;
+                                    block.explanation_video = urls[weekIndex+1]?.[sessionIndex + 1][blockIndex] ?? null;
                                 });
                             });
                         }
